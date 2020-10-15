@@ -26,7 +26,7 @@ public class PersonaController {
     //@PostMapping
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Persona> createPersona(@RequestBody Persona persona){
-        return ResponseEntity.status(HttpStatus.OK).body(this.personaServices.createPersona(persona));
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body(this.personaServices.createPersona(persona));
 
     }
 
